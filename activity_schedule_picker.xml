@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/backround"
+        android:adjustViewBounds="true" />
+
+    <!-- Logo -->
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:src="@drawable/stdomicon"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Course"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" />
+
+    <!-- Course Spinner -->
+    <Spinner
+        android:id="@+id/spinnerCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_marginTop="16dp"
+        android:theme="@style/CustomSpinnerStyle" />
+
+    <!-- Semester Spinner -->
+    <Spinner
+        android:id="@+id/spinnerSemester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCourses"
+        android:layout_marginTop="8dp"
+        android:theme="@style/CustomSpinnerStyle" />
+
+    <!-- Section Spinner -->
+    <Spinner
+        android:id="@+id/spinnerSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerSemester"
+        android:layout_marginTop="8dp"
+        android:theme="@style/CustomSpinnerStyle" />
+
+    <!-- Course Code Spinner -->
+    <Spinner
+        android:id="@+id/spinnerCourseCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerSection"
+        android:layout_marginTop="8dp"
+        android:theme="@style/CustomSpinnerStyle" />
+
+    <!-- View Schedule Button -->
+    <Button
+        android:id="@+id/btnViewSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Schedule"
+        android:layout_below="@id/spinnerCourseCode"
+        android:layout_marginTop="16dp" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:layout_below="@id/btnViewSchedule"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
